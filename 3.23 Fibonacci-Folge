@@ -22,6 +22,8 @@ int main (void){
             ergebnis = 1;
             
             }else{
+                ergebnis = 1;
+                int n = eingabe-1;
                 for(int i=1; i!=eingabe; i++) {
                     ergebnis= ergebnis + i;
                     
