@@ -1,0 +1,34 @@
+/*Schreibe ein Programm, das die Fibonacci-Zahl fn ausgibt. Die Fibonacci-Folge ist eine 
+unendliche Folge von Zahlen, bei der sich die jeweils folgende Zahl durch Addition ihrer 
+beiden vorherigen Zahlen ergibt. Errechnet werden können sie mittels ... 1+2=3, 2+3=5, 
+3+5=8, 5+8=13. Die Formel lautet also: F(n)=F(n-1) +F(n-2)
+Es gilt für die ersten beiden Zahlen:
+f0 = 0 und f1 = 1
+Folge: 0, 1, 1, 2, 3, 5, 8, 13… Beispiel: f6 = f5+f4 = 5+3 = 8
+*/
+
+#include<stdio.h>
+int main (void){
+    
+    int eingabe, ergebnis; 
+    
+    printf("Bitte geben Sie ein Wert  ein:\n\n");
+    scanf("%d", &eingabe);
+    
+    if(eingabe ==0){
+        ergebnis = 0;
+        
+    } else if(eingabe ==1) {
+            ergebnis = 1;
+            
+            }else{
+                for(int i=1; i!=eingabe; i++) {
+                    ergebnis= ergebnis + i;
+                    
+                }
+               
+    }
+        printf("Die Fibonacci Zahl beträgt: %d", ergebnis);
+        printf("\n\n");
+    }
+
