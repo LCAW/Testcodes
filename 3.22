@@ -1,0 +1,20 @@
+/*Schreibe ein Programm, das die ganzen Zahlen von 1 bis n miteinander multipliziert. 
+Das Programm erwartet die Eingabe von n und berechnet das Produkt von 1*2*3*…*n. 
+In der Mathematik heißt dieses Produkt n Fakultät, geschrieben n!.
+4! Entspricht also 1*2*3*4 = 24*/
+
+#include<stdio.h>
+int main (){
+    
+    int n, ergebnis; 
+    ergebnis=1;
+    printf("Bitte geben Sie ein Wert für n ein\n\n");
+    scanf("%d", &n);
+    
+    for(int i=1; i<=n; i++){
+        ergebnis=ergebnis*i;
+    }
+    
+    printf("Das Ergebnis ist %d", ergebnis);
+return 0;
+}
