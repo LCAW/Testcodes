@@ -14,21 +14,22 @@ int main () {
 	printf("\n ************************** \n\n");
 	
 	//Einlesen der n-ten Fibonacci Zahl
-	int f0=0,f1=1,n,i;
-	printf("\nBitte geben Sie für fn eine Zahl für n ein: ");
+	int f0=0,f1=1,n,i,erg;     //f0 und f1 sind die variablen die man + nimmt
+	printf("\nBitte geben Sie für fn eine Zahl für n ein: ");   //ist die Anzahl an wiederholungen
 	scanf("%d",&n);
 
 	//Berechnung
-	if (n==0 || n==1) {
-		return n;
+	if (n==0 || n==1) {  //die Schleife beginnt und der erste Schritt bestimmt, dass sollte die eingabe 0 oder 1 die Schleife mit return n endet.
+	return n;
 	}
 
-	for (i=2;i<=n;i++) {
-		int tmp = f0+f1;
+	for (i=2;i<=n;i++) {    /*i++ heißt das pro Schleife immer i um 1 erhöht wird, es sagt das i bei 2 startet und die
+				Schleife solange wiederholt und halt i++ gemacht bis i==n ist */
+		erg = f0+f1;  //int definiert in dem Fall tmp als Ergebnis von f0+f1
 		f0 = f1;
-		f1 = tmp;	
+		f1 = erg;	
 	}
-	printf("Die %d.Fibonacci Zahl ist %d",n,f1);
+	printf("Die %d.Fibonacci Zahl ist %d",n,erg);
 
 	//Ende
 	printf("\n\n");
