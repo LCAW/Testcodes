@@ -25,7 +25,7 @@ int main () {
 
 	for (i=2;i<=n;i++) {    /*i++ heißt das pro Schleife immer i um 1 erhöht wird, es sagt das i bei 2 startet und die
 				Schleife solange wiederholt und halt i++ gemacht bis i==n ist */
-		erg = f0+f1;  //int definiert in dem Fall tmp als Ergebnis von f0+f1, = bedeutet ich benenne es, == ist ein wirkliches "=" Zeichen, all das findet nacheinander statt
+		erg = f0+f1;    //int definiert in dem Fall tmp als Ergebnis von f0+f1, = bedeutet ich benenne es, == ist ein wirkliches "=" Zeichen, all das findet nacheinander statt
 		f0 = f1;
 		f1 = erg;	
 	}
