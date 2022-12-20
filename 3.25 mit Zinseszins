@@ -1,0 +1,38 @@
+/******************************************************************************
+
+Julius will sich einen Betrag X für N Jahre ohne Tilgung leihen. Der aktuelle Zinssatz liegt bei 4,5% p.a.
+a) lies der Betrag und die Anzahl der Jahre ein und gib die Entwicklung über die Jahre mit einfachen Zins aus.
+b) wie oben, aber mit Zinseszins
+
+Vorgehen:
+1) Erstelle ein PAP
+2) Schreibe den Algorithmus in Pseudocode
+3) Schreibe das Programm in C und lade es auf GitHub hoch.
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int b,n,a,i,w0,w1;
+    
+    printf("\n\nGeben Sie bitte den Betrag an:  \n\n");
+    scanf("%d",&b);
+    
+    printf("\n\nGeben Sie die, für die Laufzeit relevante, anzahl der Jahre an:  ");
+    scanf("%d",&n);
+    
+    printf("\n\nFolgend sehen sie den Kapitalwert mit Zinsen pro Jahr, bis zum angegebenen Jahr.\n");
+    
+    
+    
+    for(a=1;a<=n;a++){
+        i=b*1.045-b;
+        w0=i+b;
+        printf("\n%d",w0);
+        b=w0;}
+        
+    
+    return 0;
+}
