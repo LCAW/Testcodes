@@ -20,7 +20,7 @@ int main()
     printf("\n\nGeben Sie bitte den Betrag an:  \n\n");
     scanf("%f",&b);
     
-    printf("\n\nGeben Sie die, für die Laufzeit relevante, anzahl der Jahre an:  ");
+    printf("\n\nGeben Sie die, für die Laufzeit relevante, Anzahl der Jahre an:  ");
     scanf("%f",&n);
     
     printf("\n\nFolgend sehen sie den Kapitalwert mit Zinsen pro Jahr, bis zum angegebenen Jahr.\n");
