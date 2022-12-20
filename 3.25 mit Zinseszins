@@ -15,13 +15,13 @@ Vorgehen:
 
 int main()
 {
-    int b,n,a,i,w0,w1;
+    float b,n,a,i,w0,w1;
     
     printf("\n\nGeben Sie bitte den Betrag an:  \n\n");
-    scanf("%d",&b);
+    scanf("%f",&b);
     
     printf("\n\nGeben Sie die, für die Laufzeit relevante, anzahl der Jahre an:  ");
-    scanf("%d",&n);
+    scanf("%f",&n);
     
     printf("\n\nFolgend sehen sie den Kapitalwert mit Zinsen pro Jahr, bis zum angegebenen Jahr.\n");
     
@@ -30,7 +30,7 @@ int main()
     for(a=1;a<=n;a++){
         i=b*1.045-b;
         w0=i+b;
-        printf("\n%d",w0);
+        printf("\n%.2f",w0);
         b=w0;}
         
     
