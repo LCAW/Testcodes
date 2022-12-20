@@ -1,0 +1,44 @@
+/******************************************************************************
+Implementiere einen Multiplikationstaschenrechner.
+Folgende Programmaktionen treten auf:
+❑ Benutzer auffordern Eingaben zu tätigen
+❑ Eingabe von Zahl 1
+❑ Eingabe von Zahl 2
+❑ Ergebnis ausrechnen (Zahl 1 * Zahl 2)
+❑ Ergebnis ausgeben
+
+Implementiere dabei drei Funktionen:
+❑ float eingabeZahl() → für die Eingabe einer Zahl durch den Benutzer
+❑ float multipliziere(float zahl1, float zahl2) → multipliziert zwei Zahlen
+❑ void ausgabeErgebnis(float ergebnis) → gibt das Ergebnis aus
+
+Diese drei Funktionen stehen oberhalb der main-Funktion. Rufe diese Methoden aus
+der main-Methode heraus auf.
+*******************************************************************************/
+
+#include <stdio.h>
+
+float eingabeZahl(){
+    float Zahl;
+        printf("\n\nGebe die erste Zahl ein:");
+        scanf("%f", &Zahl);
+        return(Zahl);}
+        
+float multipliziere(float eins, float zwei){
+        float Summe;
+        Summe=eins*zwei;
+        return(Summe);}
+        
+        
+void ausgabeErgebnis (float Summe){
+        printf("\n\nDas Ergebnis ist %f",Summe);}
+        
+int main()
+{
+    int Zahl1,Zahl2,Summe;
+    float eins=eingabeZahl ();
+    float zwei=eingabeZahl ();
+    float drei=multipliziere (eins, zwei);
+    void  =ausgabeErgebnis(Summe);
+    return 0;
+}
