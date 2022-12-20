@@ -29,7 +29,7 @@ int main()
     
     for(a=1;a<=n;a++){
         w0=i+b;
-        printf("\n%.2f",w0);
+        printf("\n%.2f€",w0);
         b=w0;}
         
     
