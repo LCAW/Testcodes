@@ -1,0 +1,56 @@
+
+
+#include <stdio.h>
+// Funktion zur Fibonacci Zahl
+ int fib (int n) {
+  
+    if (n==0||n==1) 
+         return n;
+            
+    else
+    
+            return (fib(n-1)+fib(n-2));
+    
+ }
+ 
+ 
+ //Funktion damit die Fibonacci Folge vorwärts ausgegeben wird
+ int ausgabeErgebnis(int n) {
+  if (n<0) {
+	  printf("\n");
+	  return 0;
+  }
+  //Ergebnisausgabe
+  printf("%d | ",fib(n));
+  ausgabeErgebnis(n-1);
+}
+
+
+//Funktion damit die Fibonacci Folge rückwärts ausgegeben wird
+int ausgabeErgebnisRueck(int n, int i) {
+  if (i>n) {
+	  printf("\n");
+	  return 0;
+  }
+  //Ergebnisausgabe
+  printf("%d | ",fib(i));
+  ausgabeErgebnisRueck(n,i+1);
+}
+ 
+ 
+int main () {
+    
+    int n;
+  
+  printf("Fibonacci\n\n\n");
+  printf("Gebe die Zahl ein: ");
+  scanf("%d",&n);
+  
+ausgabeErgebnisRueck(n,0);
+printf("\n\n");
+ausgabeErgebnis(n);
+  
+  return 0;
+  
+  
+}
