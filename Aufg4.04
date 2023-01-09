@@ -1,1 +1,30 @@
 
+#include <stdio.h>
+
+ int GGT (int ez, int zz) {
+     if (ez==zz) 
+         return ez;
+     else if(ez<zz)
+            return GGT(ez, zz-ez);
+         else 
+             return GGT (ez-zz, zz);
+         
+     
+ }
+int main () {
+    
+    int ez,zz;
+  
+  printf("GGT\n\n\n");
+  printf("Gebe die erste Zahl ein: ");
+  scanf("%d",&ez);
+  printf("Gebe die zweite Zahl ein: ");
+  scanf("%d",&zz);
+  
+  printf("Der größte gemeinsame Teiler ist: %d",GGT (ez,zz));
+  
+  return 0;
+  
+  
+}
+
