@@ -1,12 +1,14 @@
 
+
 #include <stdio.h>
 
  int GGT (int ez, int zz) {
-     if (ez==zz) 
+    printf("Ich bin aufgerufen worden\n\n");
+    if (ez==zz) 
          return ez;
-     else if(ez<zz)
+    else if(ez<zz)
             return GGT(ez, zz-ez);
-     else 
+    else 
             return GGT (ez-zz, zz);
          
      
@@ -27,4 +29,3 @@ int main () {
   
   
 }
-
