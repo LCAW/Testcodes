@@ -1,0 +1,16 @@
+
+
+#include <stdio.h>
+// Werte einlesen
+
+int main(){
+int noten[10],i, d;
+
+    for(i=0; i<10; i++) {
+    printf("\nBitte geben Sie einen Wert ein (ganze Zahl): ");
+    scanf("%d", &noten[i]);}
+    
+    
+    printf("Der Durchschnitt der Noten beträgt %d",&d);
+    return=0;
+}
