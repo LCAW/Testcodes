@@ -4,13 +4,19 @@
 // Werte einlesen
 
 int main(){
-int noten[10],i, d;
-
+int noten[10],i;
+float s=0;
     for(i=0; i<10; i++) {
     printf("\nBitte geben Sie einen Wert ein (ganze Zahl): ");
-    scanf("%d", &noten[i]);}
+    scanf("%d", &noten[i]);
+    s+=noten[i];
+    }
     
+   
     
-    printf("Der Durchschnitt der Noten beträgt %d",&d);
-    return=0;
+   
+    
+    printf("Der Durchschnitt der Noten beträgt %.2f", s/10);
+    return 0;
 }
+
