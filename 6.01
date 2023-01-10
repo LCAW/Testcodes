@@ -12,10 +12,6 @@ float s=0;
     s+=noten[i];
     }
     
-   
-    
-   
-    
     printf("Der Durchschnitt der Noten beträgt %.2f", s/10);
     return 0;
 }
